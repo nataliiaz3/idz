@@ -1,0 +1,70 @@
+div , h1 {
+	display: flex; 
+    justify-content: center; 
+}
+
+#xWin{
+	background: #FF6347;
+	color: #8B0000;
+}
+
+#oWin{
+	background: #9ACD32;
+	color: #006400;
+}
+
+#draw{
+	background: #F4A460;
+	color: #D2691E;
+}
+
+.ttt table {
+	border: 1px dashed #A9A9A9;
+	border-collapse: separate;
+}
+
+.ttt td {
+	border: 1px dashed #A9A9A9;
+	height: 100px;
+	width: 100px;
+	position: relative;
+	text-align: center;
+}
+
+.ttt .o {
+	background: #9ACD32;
+}
+
+.ttt .x {
+	background: #FF6347;
+}
+
+.ttt .o::after {
+	content: "○";
+	top:-12px;
+	color: #006400;
+	display: block;
+	font-size: 100px;
+	position: absolute;
+	width: 100%;
+}
+
+.ttt .x::after {
+	content: "×";
+	top:-12px;
+	color: #8B0000;
+	display: block;
+	font-size: 100px;
+	position: absolute;
+	width: 100%;
+}
+
+.ttt .o.highlighted::after{
+	text-shadow: 0 0 1px #ADFF2F, 0 0 2px #ADFF2F, 0 0 3px #ADFF2F,0 0 4px #ADFF2F, 0 0 5px #ADFF2F,  0 0 6px #ADFF2F;
+}
+
+
+.ttt .x.highlighted::after {
+	text-shadow: 0 0 1px #FFDAB9, 0 0 2px #FFDAB9, 0 0 3px #FFDAB9,0 0 4px #FFDAB9, 0 0 5px #FFDAB9,  0 0 6px #FFDAB9;
+}
+
